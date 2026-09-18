@@ -1,0 +1,130 @@
+.formContainer {
+  background-color: #1e293b;
+  width: 380px;
+  padding: 32px 28px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.formContainer h2 {
+  color: #f8fafc;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.inputGroup {
+  width: 100%;
+}
+
+.inputGroup input,
+.inputGroup select {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px 14px;
+  outline: none;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  transition: all 0.2s ease;
+}
+
+.inputGroup input::placeholder {
+  color: #64748b;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 22px;
+  width: 100%;
+}
+
+.btn input {
+  flex: 1;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btnCalcular {
+  background-color: #10b981;
+}
+
+.btnCalcular:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btnLimpar {
+  background-color: #ef4444;
+}
+
+.btnLimpar:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.resultado {
+  margin-top: 24px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.resultado p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.resultadoSucesso {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.resultadoErro {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
