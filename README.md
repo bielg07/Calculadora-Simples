@@ -72,8 +72,4 @@ Certifique-se de ter instalado em sua máquina:
 5. **Abra no navegador:**
    Acesse o endereço informado no terminal (geralmente `http://localhost:5173` ou `http://localhost:3000`).
 
----
 
-## 📄 Licença
-
-Este projeto está sob a licença [MIT](LICENSE) - sinta-se à vontade para usá-lo e modificá-lo como desejar!
